@@ -1,0 +1,147 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #0f1b21; /* Dark background for contrast */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title span {
+    color: #26ffcb;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.reset {
+    width: 250px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #1f3540;
+    font-size: 20px;
+    font-weight: bold;
+    color: #26ffcb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.reset:hover {
+    background: #26ffcb;
+    color: #1f3540;
+}
+
+.board {
+    width: 564px; /* Default width for larger screens */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #1f3540;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.boxes {
+    height: 160px; /* Default box size for larger screens */
+    width: 160px;
+    background: #1f3540;
+    border: 4px solid #0f1b21;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boxes:hover {
+    background: gray;
+}
+
+.boxes img {
+    height: 100px;
+    width: 100px;
+}
+
+.title img {
+    height: 50px;
+    margin-left: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and small laptops */
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .board {
+        width: 400px;
+        gap: 8px;
+    }
+
+    .boxes {
+        height: 120px;
+        width: 120px;
+    }
+
+    .boxes img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .reset {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .board {
+        width: 300px;
+        gap: 5px;
+    }
+
+    .boxes {
+        height: 80px;
+        width: 80px;
+    }
+
+    .boxes img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .reset {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
